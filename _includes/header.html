@@ -1,12 +1,10 @@
 <header class="site-header">
-  <div class="navbar navbar-fixed-top">
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a href="{{ site.baseurl }}/" class="visible-xs navbar-brand">
-          <img src="{{ "/media/logo-long-color.svg" | prepend: site.baseurl }}" class="pull-left" height="35px" alt="Magnolia Christian Academy">
-        </a>
-        <a href="{{ site.baseurl }}/" class="hidden-xs navbar-brand">
-          <img src="{{ "/media/logo-long-color.svg" | prepend: site.baseurl }}" class="pull-left" height="35px" alt="Magnolia Christian Academy">
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+          <img src="{{ "/media/logo-long-bw-white.svg" | prepend: site.baseurl }}"
+               class="pull-left" height="40px" alt="Magnolia Christian Academy">
         </a>
         <button type="button" class="navbar-toggle"
                 data-toggle="collapse"
@@ -18,27 +16,10 @@
         </button>
       </div>
       <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        <li>
-          <a href="#" data-target="#" data-toggle="dropdown">Members<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://www.facebook.com/mcaoto/">Facebook Page</a></li>
-            <!--
-            <li class="divider"></li>
-            <li><a href="http://groups.magnoliachristianacademy.org/">Admin</a></li>
-            -->
-          </ul>
-        </li>
+        <li><a href="/who/">Who We Are</a></li>
+        <li><a href="/what/">What We Do</a></li>
+        <li><a href="/action/">Action To Take</a></li>
       </ul>
-      <div class="row">
-        <div class="col-xs-12">
-          <hr>
-        </div>
-      </div>
     </div>
   </div>
 </header>

@@ -1,20 +1,26 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <hr>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                    <li><a href="/who/">Who We Are</a></li>
+                    <li><a href="/what/">What We Do</a></li>
+                    <li><a href="/action/">Action To Take</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="bottom-column col-xs-3">
-                <img src="{{ "/media/logo-long-bw.svg" | prepend: site.baseurl }}" class="pull-left" width="150px" alt="Magnolia Christian Academy">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/mcaoto/">Facebook</a></li>
+                    <li><a href="http://sites.magnoliachristianacademy.org/administration/">Administration</a></li>
+                    <li><a href="http://sites.magnoliachristianacademy.org/participating-families/">Participating Families</a></li>
+                </ul>
             </div>
-            <div class="bottom-column col-xs-9">
+            <div class="col-xs-12 col-sm-12 col-md-6 text-right">
+                <img src="{{ "/media/logo-long-bw.svg" | prepend: site.baseurl }}" width="150px" alt="Magnolia Christian Academy"><br />
                 <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
