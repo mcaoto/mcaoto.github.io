@@ -1,0 +1,74 @@
+---
+layout: default
+title: Contact Us
+---
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.23/jquery.form-validator.min.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <h3>Ask Us Questions</h3>
+            <form id="ask-questions-form" action="/" method="POST">
+                <input id="_next" type="hidden" name="_next" value="/answers/" />
+                <input type="hidden" name="_subject" value="MCAotO Web Form" />
+                <div class="form-group">
+                    <label for="_gotcha" style="display:none">Gotcha</label>
+                    <input id="_gotcha" type="text" name="_gotcha" style="display:none" />
+                </div>
+
+                <div class="form-group">
+                    <label for="_replyto">Your Email Address</label>
+                    <input id="_replyto" type="email" class="form-control" name="_replyto" data-validation="email" placeholder="Enter your email address" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone Number</label>
+                    <input id="phone" type="text" class="form-control" name="phone" placeholder="Optional: Enter your phone" />
+                </div>
+                <div class="form-group">
+                    <label for="contents">Question</label>
+                <textarea id="contents" name="contents" rows="4" cols="50" class="form-control"
+                          data-validation="length" data-validation-length="min10"
+                          placeholder="Enter your question here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Send</button>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3>Location</h3>
+            <p>Directly south of Springfield utilizing the North Point Church facility in Nixa for our meetings and activities each week.</p>
+            <address>
+                <strong>North Point Church - Facility</strong><br>
+                1363 Bryan Dr<br>
+                Nixa, MO 65714
+            </address>
+            <iframe
+                    width="100%"
+                    height="350"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKW5M5nVLcL01NJqQTrTTMTJJ8ZUrYvGk&q=1363+Bryan+Dr.+Nixa,+MO+65714&center=37.1713872,-93.2849645&zoom=10" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    <!--
+    $('#_next').attr('value', document.location.protocol+'//'+document.location.host+'/answers/');
+    $.validate({
+        modules : 'date, security'
+    });
+    $('#ask-questions-form').submit(function (event) {
+        // Obfuscated form action
+        var partial = atob('c3ByZWUuaW8v')+atob("aW5mb0A=");
+        var formAction = atob('aHR0cHM6Ly9mb3Jt')+partial+atob("bWNhb3RvLm9yZw==");
+        $(this).attr('action', formAction);
+    });
+    //-->
+</script>

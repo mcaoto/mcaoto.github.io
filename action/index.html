@@ -1,70 +1,83 @@
 ---
 layout: default
-title: Action To Take
+title: How To Get Involved
 ---
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.23/jquery.form-validator.min.js"></script>
 
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Action To Take</h1>
+            <h1>How To Get Involved</h1>
         </div>
     </div>
-
 
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <h3>Ask Us Questions</h3>
-            <form id="ask-questions-form" action="/" method="POST">
-                <input id="_next" type="hidden" name="_next" value="/answers/" />
-                <input type="hidden" name="_subject" value="MCAotO Web Form" />
-                <div class="form-group">
-                    <label for="_gotcha" style="display:none">Gotcha</label>
-                    <input id="_gotcha" type="text" name="_gotcha" style="display:none" />
-                </div>
-
-                <div class="form-group">
-                    <label for="_replyto">Your Email Address</label>
-                    <input id="_replyto" type="email" class="form-control" name="_replyto" data-validation="email" placeholder="Enter your email address" />
-                </div>
-                <div class="form-group">
-                    <label for="contents">Question</label>
-                <textarea id="contents" name="contents" rows="4" cols="50" class="form-control"
-                          data-validation="length" data-validation-length="min10"
-                          placeholder="Enter your question here..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Send</button>
-            </form>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
             <h3>Apply To Attend</h3>
 
-            <p>Print out application and follow the instructiosn on the application</p>
-            <p>Bring it to the informational meeting on July 11th, email it, or mailed to the address on the form.</p>
+            <p>Print out application and follow the instructions on the form.</p>
+            <p>Bring it to the informational meeting on July 11th, email it, or mail to the address on the form.</p>
+            <p>Application deadline is July 22nd.</p>
             <a href="{{ "/files/mcaoto-application.pdf" | prepend: site.baseurl }}" target="_blank"><button type="button" class="btn btn-default">Download Application</button></a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <h3>Meeting</h3>
-            <p>Come to an announcement meeting July 11th</p>
+
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
             <h3>Social Web</h3>
-            <p>Check out our Facebook page</p>
+            <p>Check out our <a href="https://www.facebook.com/mcaoto/">Facebook Page</a></p>
+
+            <h3>Ask Us Questions</h3>
+            <p>Write to us with your questions on the <a href="/contact/">Contact Us</a> page.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h3>Events</h3><ul class="event-list">
+                <li>
+                    <time datetime="2016-07-11 1900">
+                        <span class="day">11</span>
+                        <span class="month">Jul</span>
+                        <span class="year">2016</span>
+                        <span class="time">7:30 PM</span>
+                    </time>
+                    <div class="info">
+                        <h2 class="title">Informational Meeting</h2>
+                        <p class="desc"><a href="/contact/">North Point Church 1363 Brian Dr. Nixa, MO 65714</a></p>
+                    </div>
+                </li>
+                <li>
+                    <time datetime="2016-07-22 0000">
+                        <span class="day">22</span>
+                        <span class="month">Jul</span>
+                        <span class="year">2016</span>
+                        <span class="time"></span>
+                    </time>
+                    <div class="info">
+                        <h2 class="title">Deadline for 2016-2017 Applications</h2>
+                        <p class="desc"></p>
+                    </div>
+                </li>
+                <li>
+                    <time datetime="2016-08-15 0000">
+                        <span class="day">15</span>
+                        <span class="month">Aug</span>
+                        <span class="year">2016</span>
+                        <span class="time"></span>
+                    </time>
+                    <div class="info">
+                        <h2 class="title">Orientation Meeting</h2>
+                        <p class="desc"></p>
+                    </div>
+                </li>
+                <li>
+                    <time datetime="2016-09-13 0000">
+                        <span class="day">13</span>
+                        <span class="month">Sep</span>
+                        <span class="year">2016</span>
+                        <span class="time"></span>
+                    </time>
+                    <div class="info">
+                        <h2 class="title">Start of Term</h2>
+                        <p class="desc"></p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    <!--
-    $('#_next').attr('value', document.location.protocol+'//'+document.location.host+'/answers/');
-    $.validate({
-        modules : 'date, security'
-    });
-    $('#ask-questions-form').submit(function (event) {
-        // Obfuscated form action
-        var partial = atob('c3ByZWUuaW8v')+atob("aW5mb0A=");
-        var formAction = atob('aHR0cHM6Ly9mb3Jt')+partial+atob("bWNhb3RvLm9yZw==");
-        $(this).attr('action', formAction);
-    });
-    //-->
-</script>
